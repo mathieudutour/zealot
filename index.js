@@ -73,6 +73,16 @@ const Zealot = new Proxy({}, {
         }
         return collections[property]
     }
+  },
+  // handle `delete zealot.users`
+  deleteProperty (target, property) {
+    if (!collections[property]) {
+      collections[property] = new Collection(Zealot, property, _collectionOptions)
+    }
+    return collections[property].drop().then((res) => {
+      delete collections[property]
+      return res
+    })
   }
 })
 

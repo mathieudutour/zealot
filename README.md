@@ -1,6 +1,6 @@
 # Zealot
 
-A modern MongoDB library. Only works with NodeJS 7+.
+A futurist MongoDB library. Only works with NodeJS 7+.
 
 ## Installation
 

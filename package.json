@@ -1,7 +1,7 @@
 {
   "name": "zealot",
   "version": "0.2.0",
-  "description": "",
+  "description": "A futurist MongoDB library",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,9 +9,9 @@
   "author": "Mathieu Dutour <mathieu@dutour.me> (http://mathieu.dutour.me/)",
   "license": "MIT",
   "dependencies": {
-    "mongodb": "2.2.27"
+    "mongodb": "^2.2.27"
   },
   "devDependencies": {
-    "standard": "10.0.2"
+    "standard": "^10.0.2"
   }
 }
