@@ -33,6 +33,11 @@ await (delete zealot.users[user._id])
 
 // dispatch db.collection('users').drop()
 await (delete zealot.users)
+
+// dispatch db.collection('users').findOne({_id: user._id}, {fields: {_id: 1}})
+if (await (user._id in zealot.users)) {
+
+}
 ```
 
 ## Licence
