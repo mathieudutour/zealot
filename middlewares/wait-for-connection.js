@@ -1,4 +1,4 @@
-const { STATE } = require('../constants')
+const { STATE } = require('../lib/constants')
 
 let queue = []
 

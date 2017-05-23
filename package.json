@@ -3,15 +3,36 @@
   "version": "0.2.0",
   "description": "A futurist MongoDB library",
   "main": "lib/index.js",
+  "engines": {
+    "node": ">=6.0.0"
+  },
   "scripts": {
-    "test": "standard"
+    "test": "standard && jest",
+    "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov"
   },
   "author": "Mathieu Dutour <mathieu@dutour.me> (http://mathieu.dutour.me/)",
   "license": "MIT",
   "dependencies": {
-    "mongodb": "^2.2.27"
+    "mongodb": "*"
   },
   "devDependencies": {
+    "codecov": "^2.2.0",
+    "jest": "^20.0.3",
+    "nyc": "^10.3.2",
     "standard": "^10.0.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mathieudutour/zealot.git"
+  },
+  "keywords": [
+    "zealot",
+    "mongodb",
+    "proxy",
+    "futur"
+  ],
+  "bugs": {
+    "url": "https://github.com/mathieudutour/zealot/issues"
+  },
+  "homepage": "https://github.com/mathieudutour/zealot#readme"
 }

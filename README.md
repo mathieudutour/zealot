@@ -1,6 +1,6 @@
 # Zealot
 
-A futurist MongoDB library. Only works with NodeJS 7+.
+A futurist MongoDB library. Only works with NodeJS 6+.
 
 ## Installation
 
@@ -19,25 +19,9 @@ zealot.open('localhost/test') // open the mongodb connection
 const user = await zealot.users.findOne({username: 'foo'})
 
 // dispatch db.collection('users').update({_id: user._id}, {$set: {username: 'bar'}})
-await (zealot.users[user._id].username = 'bar')
-// or
 await (zealot.users[user._id].update({$set: {username: 'bar'}}))
 // or
 await (zealot.users.update({_id: user._id}, {$set: {username: 'bar'}}))
-
-// dispatch db.collection('users').update({_id: user._id}, {$unset: {temp: ''}})
-await (delete zealot.users[user._id].temp)
-
-// dispatch db.collection('users').deleteOne({_id: user._id})
-await (delete zealot.users[user._id])
-
-// dispatch db.collection('users').drop()
-await (delete zealot.users)
-
-// dispatch db.collection('users').findOne({_id: user._id}, {fields: {_id: 1}})
-if (await (user._id in zealot.users)) {
-
-}
 ```
 
 ## Licence
