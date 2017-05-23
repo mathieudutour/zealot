@@ -2,7 +2,7 @@
   "name": "zealot",
   "version": "0.2.0",
   "description": "A futurist MongoDB library",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "standard"
   },
